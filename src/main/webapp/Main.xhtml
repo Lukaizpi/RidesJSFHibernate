@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+
+<f:view>
+	<h:head>
+		<title>Main</title>
+		<h:outputStylesheet name="css/styles.css" />
+	</h:head>
+
+	<h:body>
+		<div class="form-container">
+			<h:form>
+				<h1>Aukeratu</h1>
+				<table>
+					<tr>
+						<td colspan="2" style="padding: 10px; text-align: center; margin: 5px;">
+							<p:commandButton value="Bidaia sortu"
+								action="#{Main.goToCreateRide}" ajax="false" />
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2" style="padding: 10px; text-align: center; margin: 5px;">
+							<p:commandButton value="Nire bidaiak ikusi"
+								action="#{Main.goToMyRides}" ajax="false"  />
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2" style="padding-top: 30px; padding-bottom: 10px; text-align: center; margin: 5px;">
+							<p:commandButton value="Saioa itxi" action="#{Hasiera.saioaItxi}" ajax="false" style="font-size:14px"/>
+						</td>
+					</tr>
+				</table>
+			</h:form>
+		</div>
+	</h:body>
+</f:view>
+
+</html>

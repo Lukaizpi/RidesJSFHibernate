@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+
+<f:view>
+	<h:head>
+		<title>Hasiera</title>
+		<h:outputStylesheet name="css/styles.css" />
+	</h:head>
+
+	<h:body>
+		<div class="form-container">
+			<h:form>
+				<h1>Menua</h1>
+				<table>
+					<tr>
+						<td colspan="2" style="padding: 10px; text-align: center; margin: 5px;">
+							<p:commandButton value="Login"
+								action="#{Hasiera.goToLogin}" ajax="false" />
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2" style="padding: 10px; text-align: center; margin: 5px;">
+							<p:commandButton value="Erregistratu"
+								action="#{Hasiera.goToRegister}" ajax="false" />
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2" style="padding: 10px; text-align: center; margin: 5px;">
+							<p:commandButton value="Bidaia bilatu"
+								action="#{Hasiera.goToQueryRides}" ajax="false" />
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2" style="padding: 10px; text-align: center; margin: 5px;">
+							<p:commandButton value="Hiri batetik ateratzen diren bidaiak" 
+								action="#{Hasiera.getHiriBatetik}" ajax="false"/>
+						</td>
+					</tr>
+				</table>
+			</h:form>
+		</div>
+	</h:body>
+</f:view>
+
+</html>
